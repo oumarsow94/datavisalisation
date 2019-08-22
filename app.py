@@ -9,11 +9,11 @@ app = Flask(__name__)
 def connectToDB():
     try:
     #  connectionString = 'dbname=music user=postgres password=kirbyk9 host=localhost'
-        connection = psy.connect(user='postgres',
-                                host='localhost',
+        connection = psy.connect(user='nfqvwjhghbundx',
+                                host='ec2-54-225-106-93.compute-1.amazonaws.com',
                                 port='5432',
-                                password='Fatimata94&',
-                                database = 'jumia'
+                                password='3cc1e5096c4e1b4f46589b8c36d61b4ca4079cbd1e351a940c5cd1ed79f35dc8',
+                                database = 'd2uqbapnjb9stj'
                                 )
         return connection
     except(Exception) as error:
