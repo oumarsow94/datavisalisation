@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body class="has-fixed-sidenav">
+    <header>
+        <div class="navbar-fixed" style="margin-left: 22%">
+            <nav class="navbar purple darken-1">
+                <div class=""><a href="#!" class="brand-logo black-text text-darken-4 hide-on-med-and-down">Home</a>
+                    <a href="#" class="name-logo brand-logo hide-on-med-and-down" style="margin-left: 28%">Sonatel Academy</a>
+
+                    <li><a href="/inscription" data-target="chat-dropdown" class="dropdown-trigger waves-effect" style="margin-left: 73%"><i class="material-icons">vpn_key</i></a></li>
+                    <a href="#!" data-target="sidenav-left" class="sidenav-trigger left"><i class="material-icons black-text">menu</i></a>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar -->
+        <ul id="slide-out" class="sidenav sidenav-fixed purple darken-1">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../static/images/oumar.jpg" width="300px">
+                    </div>
+                    <a href="#user"><img class="circle" src="../static/images/ou.jpg"></a>
+                    <a href="#name"><span class="white-text name">Oumar Sow</span></a>
+                    <a href="#email"><span class="white-text email">oumar.sow@gmail.com</span></a>
+                </div>
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold waves-effect active" style="width: 100%"><a class="collapsible-header">Scolarité<i class="material-icons chevron">chevron_right</i></a>
+                        <div class="collapsible-body purple darken-1">
+                            <ul>
+                                <li style="width: 100%"><a href="/pages/admin-dashboard" class="waves-effect active">Inscription<i class="material-icons">person</i></a></li>
+                                <li style="width: 100%"><a href="/pages/admin-fixed-chart" class="waves-effect">Modification<i class="material-icons">edit</i></a></li>
+                                <li style="width: 100%"><a href="/pages/admin-grid" class="waves-effect">Suspension<i class="material-icons">remove</i></a></li>
+                                <li style="width: 100%"><a href="/pages/admin-chat" class="waves-effect">Annulation<i class="material-icons">remove</i></a></li>
+                            </ul>
+                        </div>
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold waves-effect active" style="width: 100%"><a class="collapsible-header">Promotion<i class="material-icons chevron">chevron_right</i></a>
+                                <div class="collapsible-body purple darken-1">
+                                    <ul>
+                                        <li style="width: 100%"><a href="/pages/admin-dashboard" class="waves-effect active">Nouveau<i class="material-icons">school</i></a></li>
+                                        <li style="width: 100%"><a href="/pages/admin-fixed-chart" class="waves-effect">Modification<i class="material-icons">edit</i></a></li>
+                                        <li style="width: 100%"><a href="/pages/admin-fixed-chart" class="waves-effect">liste<i class="material-icons">list</i></a></li>
+
+                                    </ul>
+                                </div>
+
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold waves-effect active" style="width: 100%"><a class="collapsible-header">Referentiel<i class="material-icons chevron">chevron_right</i></a>
+                                        <div class="collapsible-body purple darken-1">
+                                            <ul>
+                                                <li style="width: 100%"><a href="/pages/admin-dashboard" class="waves-effect active">Nouveau<i class="material-icons">school</i></a></li>
+                                                <li style="width: 100%"><a href="/pages/admin-fixed-chart" class="waves-effect">Modification<i class="material-icons">edit</i></a></li>
+
+                                            </ul>
+                                        </div>
+    </header>
+    <main style="margin-left: 22%">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1>Simple Line Chart</h1>
+                    <!-- bar chart canvas element -->
+                    <canvas id="myChart" width="600" height="400"></canvas>
+                    <p id="caption">The chart is displaying a simple line chart.</p>
+
+                </div>
+                <!-- <div class="col s6">
+                    <h1>Flask Chart.js</h1>
+                    bar chart canvas element
+                    <canvas id="chart" width="600" height="400"></canvas>
+
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer purple darken-1">
+        <div class="container" style="margin-left: 25%">
+            <div class="row">
+                <div class="col s6 m3">
+
+
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">About</h5>
+                    <ul>
+                        <img class="sonatel-logo" src="../static/images/sonatel.gif" width="50px">
+                        <p>Made with love by Sonatel Academy.</p>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">Partenaire</h5>
+                    <ul style="color: white">
+                        <li><img src="../static/images/orange.jpg" width="50px" style="margin-left: 20px"></img>
+
+                        </li>
+                        <li style="color: black"><img src="../static/images/so.png" width="100px"></img>
+                        </li>
+                        <li style="color: black"><img src="../static/images/sim.jpeg" width="100px"></img>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">Contact</h5>
+                    <ul>
+                        <li><a href="#!">Twitter</a></li>
+                        <li><a href="#!">Facebook</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/materialize.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                labels:[{% for item in labels %}
+                    "{{ item }}",
+                    {% endfor %}],
+                datasets: [{
+                    label: 'Ventes pour le mois de Janvier',
+                    backgroundColor: '#8e24aa',
+                    borderColor: '#8e24aa',
+                    data: {{ data }}
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
+</html>

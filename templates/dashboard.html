@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrator</title>
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<style type="text/css">
+.bg{
+	background-image: linear-gradient(to top left,#8a4592,#fff);
+}
+nav{
+	background-image: linear-gradient(to top right,#fff,#8a4592); 
+	padding-left: 300px;
+}
+footer{
+	background-image: linear-gradient(to top right,#fff,#8a4592); 
+	padding-left: 30px;
+}
+.content{
+	padding-left: 300px;
+	height:100%;
+}
+.card-bg{
+	background: rgba(0,0,0,0);
+}
+@media only screen and (max-width: 992px){
+	.content,nav{
+		padding-left: 0;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.sidenav').sidenav();
+	});
+</script>
+<body>
+	<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo center">Administrator</a>
+			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
+		</div>
+	</nav>
+	</div>
+	<ul class="sidenav sidenav-fixed bg" id="slide-out">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="../static/images/oumar.jpg" width="100%">
+				</div>
+				<a href="#"><img src="../static/images/ou.jpg"" class="circle"></a>
+				<a href="#" class="white-text name">Oumar Sow</a>
+				<a href="#" class="white-text email">sowsogm@email.com</a>
+			</div>	
+		</li>
+		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
+		<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>
+	</ul>
+	<div class="content bg">
+		<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h1 class="white-text center">Jumia data visualisation</h1>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Revenue</p>
+						<h5>5 Millions</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%20</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Likes</p>
+						<h5>2400</h5>
+						<i class="material-icons small red-text">keyboard_arrow_down</i><br>
+						<b class="red-text">%10</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3 m6">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Users</p>
+						<h5>5000,00</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%7</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3 m6">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Conversion Rate</p>
+						<h5>0,80%</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%25</b>
+					</div>
+				</div>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<canvas id="myChart"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<canvas id="myChart2"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer class="page-footer">
+        <div class="container" style="margin-left: 25%">
+            <div class="row">
+                <div class="col s6 m3">
+
+
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">About</h5>
+                    <ul>
+                        <img class="sonatel-logo" src="../static/images/sonatel.gif" width="50px">
+                        <p>Made with love by Sonatel Academy.</p>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">Partenaire</h5>
+                    <ul style="color: white">
+                        <li><img src="../static/images/orange.jpg" width="50px" style="margin-left: 20px"></img>
+
+                        </li>
+                        <li style="color: black"><img src="../static/images/so.png" width="100px"></img>
+                        </li>
+                        <li style="color: black"><img src="../static/images/sim.jpeg" width="100px"></img>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s6 m3">
+                    <h5 style="color: black">Contact</h5>
+                    <ul>
+                        <li><a href="#!">Twitter</a></li>
+                        <li><a href="#!">Facebook</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script type="text/javascript">
+		var chr=document.getElementById("myChart").getContext("2d");
+		var chr2=document.getElementById("myChart2").getContext("2d");
+		var myChart=new Chart(chr,{
+			type:'line',
+			data:{
+				labels:['J','F','M','A','M','J','J','A','S','O','N','D'],
+				datasets:[{
+					label:'smartphones',
+					data:{{ listes }},
+					backgroundColor:'rgba(0,0,0,0)',
+					borderColor:'#f50057 ',
+					borderWidth:2
+				},
+				{
+					label:'informatiques',
+					data:{{ data }},
+					backgroundColor:'rgba(0,0,0,0)',
+					borderColor:'#9c27b0',
+					borderWidth:2,
+				},
+				{
+					label:'electromenagers',
+					data:{{ liste }},
+					backgroundColor:'rgba(0,0,0,0)',
+					borderColor:'#fff',
+					borderWidth:2,
+				}
+				]
+				
+			},
+			options:{
+				legend:{
+					position:'right',
+					labels:{
+						fontColor:'#8e24aa',
+						position:'right',
+					}
+
+				},
+				title: {
+					display: true,
+					text: 'Courbes des Ventes annuelles'
+					}
+								
+			}
+		});
+		var myChart2=new Chart(chr2,{
+			type:'doughnut',
+			data:{
+				labels:['Smartphone','Informatique','Electrmenagers'],
+				datasets:[{
+					label:'Ventes pour le mois de Janvier',
+					data:{{ a }},
+					backgroundColor:['#328f8e','#f50057','#01579b'],
+					borderColor:'#328f8e',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				legend:{
+					position:'right',
+					labels:{
+						fontColor:'#8e24aa',
+					}
+				},
+				title: {
+					display: true,
+					text: 'Diagramme des ventes moyennes'
+					}
+				
+			}
+		});
+	</script>
+
+
+
+
+
+
+
+ 		
+</body>
+</html>
